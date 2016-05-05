@@ -45,8 +45,8 @@ a, h3, h2, h1{color: white;}
 	height: 105%;
 }
 iframe{
-	border-left: 10px solid white;
-	border-top: 10px solid white;
+  border-left: 10px solid white;
+  border-top: 10px solid white;
   padding-left: 0
   padding-right: 0;
   margin-left: auto;
