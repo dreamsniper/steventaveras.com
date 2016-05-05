@@ -40,9 +40,9 @@ a, h3, h2, h1{color: white;}
   background-color: rgba(153,102,102, 0.3);
 }
 .bioPic{
-	padding-top: 30px;
-	width: 105%;
-	height: 105%;
+  padding-top: 30px;
+  width: 105%;
+  height: 105%;
 }
 iframe{
   border-left: 10px solid white;
