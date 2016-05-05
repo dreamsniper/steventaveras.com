@@ -1,0 +1,6 @@
+{
+  "name": "www.steventaveras.com",
+  "tagline": "Files and code used to put my website together.",
+  "body": "### Welcome to my site\r\nI will be trying to update this site as i add new pages and images. As of right now the site has only one gallery up and running and the contact page still needs to be designed. The Gallery page is still being tweaked out as i am trying to put multiple javascript drawing on a page. I managed to do it with <iframe> but it can get a little tricky even with that.\r\n\r\n### Framework\r\nI used the bootstraps framework in order to organize the page. Although i am fairly comfortable with css i do still need more practice and having used the framework it took me a lot less time to position the elements than usual. Any time saving tricks are a welcome advantage in my arsenal of skills.\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
