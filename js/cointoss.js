@@ -40,134 +40,15 @@ var body,
     tailsCount,
     h2Element;
 
-//assign body
-body = document.body;
-
-//initialize and call main coin images
-coin = document.getElementById('coin');
-coinImage = document.createElement('img');
-headCoin = document.getElementById('head-coin');
-headCoinImage = document.createElement('img');
-tailCoin = document.getElementById('tail-coin');
-tailCoinImage = document.createElement('img');
-insertImages();
-
-//initialize navs
-nav = document.getElementsByTagName('nav')[0];
-script = document.createElement('script');
-script.src = 'scripts/nav.json';
-body.appendChild(script);
-headerNav;
-
-//assign accordion buttons and div
-accordionButton = document.querySelectorAll('h2');
-accordionButtonDiv = document.querySelectorAll('h2 + div');
-allAccordionClosed = true;
-
-//add eventListeners to accordion buttons
-for (eventL = 0; eventL < accordionButton.length; eventL += 1) {
-    accordionButton[eventL].addEventListener('click', toggle, false);
-}
-
-//initialize  screens
-welcomeScreen = document.getElementsByClassName('welcome-screen')[0];
-gameScreen = document.getElementsByClassName('game-screen')[0];
-endScreen = document.getElementsByClassName('end-screen')[0];
-
-//initialize start button and add listener
-startButton = document.getElementsByClassName('start-button')[0];
-startButton.addEventListener('click', start, false);
-
-//initialize back button and add listener
-backButton = document.getElementsByClassName('back-button')[0];
-backButton.addEventListener('click', back, false);
-
-//initialize retry button and add listener
-retry = document.getElementsByClassName('try-again')[0];
-retry.addEventListener('click', start, false);
-
-//initialize username prompt div and buttons
-userNamePrompt = document.getElementById('username-prompt');
-headButton = document.getElementById('head-button');
-tailButton = document.getElementById('tail-button');
-flipButton = document.getElementById('flip-button');
-
-
-//add listeners
-headButton.addEventListener('click', selectHead, false);
-tailButton.addEventListener('click', selectTail, false);
-flipButton.addEventListener('click', flipCoin, false);
-flipMenu = document.getElementsByClassName('flip-menu')[0];
-
-//coin animation
-coinAnimation = document.getElementsByClassName('coin-animation')[0];
-results = document.getElementsByClassName('results')[0];
-text = [];
-h2Element = document.createElement('h2');
-headsCount = document.getElementById('heads-count');
-tailsCount = document.getElementById('tails-count');
-
-//define HeaderNav as function 
-function headerNav(navItems) {
-    'use strict';
-
-    //to build the html string
-    html = [];
-
-    //create a ul element
-    ul = '<ul>';
-
-    //loop to populate navigation
-    for (i = 0; i < navItems.items.length; i += 1) {
-
-        if (navItems.items[i].items !== '') {
-            ul += '<li>';
-
-            //cycle through the urls and labels and build the a tag
-            ul += '<a href="' + navItems.items[i].url + '" >';
-            ul += navItems.items[i].label + '</a>';
-
-            ul += '<ul>';
-
-            for (a = 0; a < navItems.items[i].items.length; a += 1) {
-                ul += '<li>';
-
-                //cycle through theurls and labels and build the a tag
-                html[a] = '<a href="' + navItems.items[1].items[a].url;
-                html[a] += '" >' + navItems.items[1].items[a].label + '</a>';
-
-                ul += html[a];
-
-                ul += '</li>';
-            }
-            //close the nested ul
-            ul += '</ul>';
-
-        } else {
-            ul += '<li>';
-
-            //cycle through theurls and labels and build the a tag
-            html[i] = '<a href="' + navItems.items[i].url + '" >';
-            html[i] += navItems.items[i].label + '</a>';
-
-            ul += html[i];
-
-            ul += '</li>';
-        }
-    }
-    //append html to nav
-    nav.innerHTML = ul;
-}
-
 //function to insert main img and coins to divs
 function insertImages() {
     'use strict';
 
-    coinImage.src = 'img/coin.png';
+    coinImage.src = '../images/coin.png';
     coin.appendChild(coinImage);
-    headCoinImage.src = 'img/head-coin.png';
+    headCoinImage.src = '../images/head-coin.png';
     headCoin.appendChild(headCoinImage);
-    tailCoinImage.src = 'img/tail-coin.png';
+    tailCoinImage.src = '../images/tail-coin.png';
     tailCoin.appendChild(tailCoinImage);
 }
 
@@ -288,7 +169,7 @@ function flipCoin() {
 }
 
 function showHeadAnimation() {
-    text[0] = '<img class="animated flip" src="img/head-coin.png"/>';
+    text[0] = '<img class="animated flip" src="../images/head-coin.png"/>';
     coinAnimation.innerHTML = text[0];
 
     heads += 1;
@@ -297,7 +178,7 @@ function showHeadAnimation() {
 }
 
 function showTailAnimation() {
-    text[1] = '<img class="animated flip" src="img/tail-coin.png"/>';
+    text[1] = '<img class="animated flip" src="../images/tail-coin.png"/>';
     coinAnimation.innerHTML = text[1];
 
     tails += 1;
@@ -310,3 +191,63 @@ function reset() {
     heads = 0;
     tails = 0;
 }
+
+//assign body
+body = document.body;
+
+//initialize and call main coin images
+coin = document.getElementById('coin');
+coinImage = document.createElement('img');
+headCoin = document.getElementById('head-coin');
+headCoinImage = document.createElement('img');
+tailCoin = document.getElementById('tail-coin');
+tailCoinImage = document.createElement('img');
+insertImages();
+
+//assign accordion buttons and div
+accordionButton = document.querySelectorAll('h2');
+accordionButtonDiv = document.querySelectorAll('h2 + div');
+allAccordionClosed = true;
+
+//add eventListeners to accordion buttons
+for (eventL = 0; eventL < accordionButton.length; eventL += 1) {
+    accordionButton[eventL].addEventListener('click', toggle, false);
+}
+
+//initialize  screens
+welcomeScreen = document.getElementsByClassName('welcome-screen')[0];
+gameScreen = document.getElementsByClassName('game-screen')[0];
+endScreen = document.getElementsByClassName('end-screen')[0];
+
+//initialize start button and add listener
+startButton = document.getElementsByClassName('start-button')[0];
+startButton.addEventListener('click', start, false);
+
+//initialize back button and add listener
+backButton = document.getElementsByClassName('back-button')[0];
+backButton.addEventListener('click', back, false);
+
+//initialize retry button and add listener
+retry = document.getElementsByClassName('try-again')[0];
+retry.addEventListener('click', start, false);
+
+//initialize username prompt div and buttons
+userNamePrompt = document.getElementById('username-prompt');
+headButton = document.getElementById('head-button');
+tailButton = document.getElementById('tail-button');
+flipButton = document.getElementById('flip-button');
+
+
+//add listeners
+headButton.addEventListener('click', selectHead, false);
+tailButton.addEventListener('click', selectTail, false);
+flipButton.addEventListener('click', flipCoin, false);
+flipMenu = document.getElementsByClassName('flip-menu')[0];
+
+//coin animation
+coinAnimation = document.getElementsByClassName('coin-animation')[0];
+results = document.getElementsByClassName('results')[0];
+text = [];
+h2Element = document.createElement('h2');
+headsCount = document.getElementById('heads-count');
+tailsCount = document.getElementById('tails-count');
