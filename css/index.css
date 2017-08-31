@@ -204,7 +204,7 @@ footer p {
 
 .design {}
 
-#accordion {
+.frontend #accordion {
     border-radius: 5px;
     padding: 1em;
     background-color: rgba(255, 255, 255, .5);
@@ -271,9 +271,10 @@ footer {
 }
 
 .cointoss .start-button span {
+    color: #000;
     text-align: center;
     display: block;
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 1rem;
     width: 30%;
     background-color: #ffffff;
@@ -389,6 +390,7 @@ footer {
 }
 
 .cointoss #accordion ul {
+    color: #000;
     margin: 1rem;
     padding: 0;
     width: 100%;
@@ -396,10 +398,10 @@ footer {
 }
 
 .cointoss #accordion ul li {
+    display: block;
     list-style: none;
     padding: 10px;
     margin: 6.6666666667px;
-    background-color: #F0FFC9;
 }
 
 .cointoss #accordion div {
