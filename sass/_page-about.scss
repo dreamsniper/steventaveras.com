@@ -1,0 +1,36 @@
+/////////about page//////////////
+.about {
+    p {
+        padding: 1rem 2rem 1rem 2rem;
+        color: $color_1;
+    }
+    .about-section {
+        h1 {
+            margin-bottom: 1.5rem;
+            padding: .5rem;
+            background-color: $background_color_2;
+            text-align: center;
+        }
+        background-color: $background_color_3;
+        padding: 0;
+    }
+    .about-jumbo {
+        color: $color_1;
+        background-image: url("https://raw.githubusercontent.com/dreamsniper/MMP100/master/images/july2-5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 4rem;
+        h2 {
+            margin-bottom: 1.5rem;
+            padding: .5rem;
+            font-size: 1.2em;
+            background-color: $background_color_2;
+            text-align: center;
+        }
+    }
+    .main-image {
+        margin: 0 auto;
+        border-radius: 8em;
+        border: 5px solid rgba(255, 0, 0, 0.6);
+    }
+}

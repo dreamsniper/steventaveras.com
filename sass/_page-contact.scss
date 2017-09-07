@@ -1,0 +1,67 @@
+/////////contact page//////////////
+.contact {
+    background-image: url("../images/contact-bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contact-box {
+        max-width: 500px;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: $background_color_8;
+    }
+    form {
+        margin: 0 auto;
+        width: 459px;
+    }
+    input {
+        width: 439px;
+        height: 40px;
+        background: #efefef;
+        border: 1px solid #dedede;
+        padding: 10px;
+        margin-top: 3px;
+        font-size: 0.9em;
+        color: $color_5;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        &:focus {
+            border: 1px solid #97d6eb;
+        }
+    }
+    textarea {
+        width: 439px;
+        height: 40px;
+        background: #efefef;
+        border: 1px solid #dedede;
+        padding: 10px;
+        margin-top: 3px;
+        font-size: 0.9em;
+        color: $color_5;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        height: 213px;
+        &:focus {
+            border: 1px solid #97d6eb;
+        }
+    }
+    #submit {
+        width: 127px;
+        height: 38px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        &:hover {
+            opacity: .9;
+        }
+    }
+    #header {
+        clear: both;
+        padding: 5px;
+        border-radius: 5px;
+        width: 99%;
+        height: 60px;
+        background-color: $background_color_9;
+    }
+}

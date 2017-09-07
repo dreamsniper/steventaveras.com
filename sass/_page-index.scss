@@ -1,0 +1,12 @@
+/////////index page//////////////
+.index {
+    background-image: url("../images/cityscape-1185470.jpg");
+    .myBackground {
+        //clear background
+        background-color: $background_color_6;
+    }
+    .b {
+        background-color: $background_color_7;
+        padding: 1em;
+    }
+}

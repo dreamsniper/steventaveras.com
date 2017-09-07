@@ -1,0 +1,34 @@
+/////////main body//////////////
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $color_6;
+    .nav {
+        li {
+            display: inline;
+            a {
+                text-align: right;
+            }
+        }
+    }
+    .jumbotron {
+        color: $color_3;
+    }
+    .section {
+        background-color: $background_color_5;
+    }
+    a {
+        color: $color_1;
+    }
+    footer {
+        clear: both;
+        width: 100%;
+        height: 50px;
+        margin: 3em;
+        p {
+            color: $color_1;
+            margin: 20px;
+        }
+    }
+}
